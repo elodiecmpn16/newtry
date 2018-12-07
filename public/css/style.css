@@ -1,0 +1,47 @@
+
+.starter-template {
+    padding: 3rem 1.5rem;
+    text-align: center;
+}
+
+.accueilMetiers{
+   background-color: rgba(61, 72, 82, 0.5);
+    padding: 30px;
+}
+
+.containerMetier{
+margin-top: 15%;
+}
+.jumbotron{
+    background-image: url("../img/transport/hannes-egler-360942-unsplash.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom ;
+}
+
+.bandeau{
+    padding: 20px;
+
+}
+.jumbotron img{
+    width: 100%;
+
+}
+
+.footer{
+    float: left;
+    display: block;
+    padding: 20px;
+    margin-top: 40px;
+    background-color: rgba(128, 128, 128, 0.11);
+}
+.infosFooter{
+    float: left;
+    display: inline-block;
+    margin: auto;
+    text-align: center;
+
+}
+.titreTransport{
+    color: #0e90d2;
+}
