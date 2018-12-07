@@ -8,6 +8,6 @@
     <title>Admin</title>
 </head>
 <body>
-<p>bonjour admint</p>
+<p>bonjour admin</p>
 </body>
 </html>
