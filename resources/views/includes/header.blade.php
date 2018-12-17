@@ -12,7 +12,7 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item active">
-                    <a class="nav-link" href="http://localhost/newtry/public/accueil">Accueil <span class="sr-only">(current)</span></a>
+                    <a class="nav-link" href="/newtry/public/accueil">Accueil <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#">Infos utiles</a>
@@ -26,9 +26,9 @@
                         Métiers
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="http://localhost/newtry/public/accueil/transport">Transport</a>
-                        <a class="dropdown-item" href="http://localhost/newtry/public/accueil/logistique">Logistique</a>
-                        <a class="dropdown-item" href="http://localhost/newtry/public/accueil/location">Location</a>
+                        <a class="dropdown-item" href="/newtry/public/accueil/transport">Transport</a>
+                        <a class="dropdown-item" href="/newtry/public/accueil/logistique">Logistique</a>
+                        <a class="dropdown-item" href="/newtry/public/accueil/location">Location</a>
                         <div class="dropdown-divider"></div>
                         <a class="dropdown-item" href="#">Divers</a>
                     </div>

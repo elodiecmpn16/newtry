@@ -18,13 +18,13 @@ class Client
     public function handle($request, Closure $next)
     {
         if (Auth::check() && Auth::user()->role == 'client') {
-            return $next($request);
-        }
-        elseif (Auth::check() && Auth::user()->role == 'agent') {
-            return redirect('/agent');
-        }
+            return $next($request);}
+//        }
+//        elseif (Auth::check() && Auth::user()->role == 'agent') {
+//            return redirect('/agent');
+//        }
         else {
-            return redirect('/admin');
+            return redirect('/main');
         }
     }
-}
+

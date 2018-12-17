@@ -26,15 +26,29 @@ Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
 
-Route::get('/admin/admin', function(){echo "Hello Admin";})->middleware('auth','admin');
+Route::get('/admin/profil', function(){
+    return view('admin/profil');
+});
 
-Route::get('/agent/profil', function(){echo "Hello Agent";})->middleware('auth','agent');
+Route::get('/agent/profil', function(){
+    return view('agent/profil');
+});
 
-Route::get('/client/profil','ClientController@afficherStock')->middleware('auth','client');
+Route::get('/client/profil', function(){
+    return view('client/profil');
+});
+
+Route::get('/test', function (){
+    return view('test');
+});
+
+//Route::get('/client/profil','ClientController@afficherStock')->middleware('auth','client');
 
 Route::get('/accueil','ClientController@index')->middleware('auth','client');
 
-Route::get('/stock/afficher','StockController@index')->middleware('auth','client');
+Route::get('/stock/afficher','StockController@index');
+//Route::get('/stock/infos','StockController@index');
+Route::get('/client/stocks','ClientController@afficherStock');
 
 
 Route::get('/accueil/transport', function () {

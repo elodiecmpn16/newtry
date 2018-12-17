@@ -13,11 +13,11 @@ class ClientController extends Controller
 
 
 {
-    /**
-     * Display a listing of the resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
+    public function __construct()
+    {
+        $this->middleware('auth');
+
+    }
 
     public function index(){
         $clients = Client::all();
@@ -38,7 +38,7 @@ class ClientController extends Controller
             ->groupBy('A.code')
             ->where('A.groupe', '=', 'logistique')
             ->get();
-        return view('client.profil', ['stocks' => $stocks, 'clients' => $clients]);
+        return view('client/stocks', ['stocks' => $stocks, 'clients' => $clients]);
     }
     /**
      * Show the form for creating a new resource.

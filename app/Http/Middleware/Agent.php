@@ -19,11 +19,11 @@ class Agent
         if (Auth::check() && Auth::user()->role== 'agent') {
             return $next($request);
         }
-        elseif (Auth::check() && Auth::user()->role == 'client') {
-            return redirect('/client');
+//        elseif (Auth::check() && Auth::user()->role == 'client') {
+//            return redirect('/client');
+//        }
+//        else {
+            return redirect('/main');
         }
-        else {
-            return redirect('/admin');
-        }
-    }
+
 }

@@ -20,16 +20,18 @@ class LoginController extends Controller
     */
     use AuthenticatesUsers;
 
-    protected function redirectTo()
-    {
-        if (Auth::check() && Auth::user()->role == 'client') {
-            return 'client/profil';
-        } elseif (Auth::check() && Auth::user()->role == 'agent') {
-            return 'agent/profil';
-        } elseif (Auth::check() && Auth::user()->role == 'admin') {
-            return'admin/profil';
-        }else return '/home';
-    }
+protected function redirectTo()
+{
+    if (Auth::check() && Auth::user()->role_id == 2) {
+       return 'client/profil';
+    } elseif (Auth::check() && Auth::user()->role_id == 3) {
+        return 'agent/profil';
+    } elseif (Auth::check() && Auth::user()->role_id == 1) {
+        return 'admin/profil';
+    }else return '/main';
+
+}
+
 
 
     public function __construct()

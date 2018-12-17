@@ -16,11 +16,11 @@ class StockController extends Controller
 
 //           $stocks = Stock::all('ref')->toArray();
 //           return view('client.profil',['stocks'=>$stocks]);
-        $jsonurl = "http://Elodie:Elodie@extranet.tremblaye-sa.fr/api/api.php/stock/09148";
+        $jsonurl = "http://Elodie:Elodie@extranet.tremblaye-sa.fr/api/log/api.php/stock/09148";
         $json = file_get_contents($jsonurl);
         $datas = json_decode($json);
 
-        return view('stock.afficher',['datas'=>$datas]);
+        return view('stock/afficher',['datas'=>$datas]);
     }
 
     /**
