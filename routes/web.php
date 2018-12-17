@@ -38,9 +38,9 @@ Route::get('/client/profil', function(){
     return view('client/profil');
 });
 
-Route::get('/test', function (){
-    return view('test');
-});
+Route::get('/test', 'FormController@index');
+
+Route::post('/store','FormController@store');
 
 //Route::get('/client/profil','ClientController@afficherStock')->middleware('auth','client');
 
