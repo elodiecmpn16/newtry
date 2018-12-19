@@ -37,10 +37,10 @@ Route::get('/agent/profil', function(){
 Route::get('/client/profil', function(){
     return view('client/profil');
 });
-
-Route::get('/test', 'FormController@index');
-
-Route::post('/store','FormController@store');
+Route::resource('test', 'FormController');
+//Route::get('/test', 'FormController@index');
+//
+//Route::post('/store','FormController@results');
 
 //Route::get('/client/profil','ClientController@afficherStock')->middleware('auth','client');
 
